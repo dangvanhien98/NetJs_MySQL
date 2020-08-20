@@ -1,4 +1,4 @@
-import{Entity, Column, PrimaryGeneratedColumn} from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('User')
 export class UserEntity {
@@ -6,10 +6,10 @@ export class UserEntity {
     id: number;
 
     @Column({length: 25})
-    fullName: string
+    fullName: string;
 
     @Column('date')
-    birthday: Date
+    birthday: Date;
 
     @Column()
     isActive: boolean;
